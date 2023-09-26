@@ -6,12 +6,6 @@ export default createStore({
         modalWindowData:{},
         listItems:JSON.parse(localStorage.getItem('listItems')),
     },
-  /*
-    [
-        { id: 1, svg: "img/item1.svg", row: 1, column: 1, count: 4 },
-        { id: 2, svg: "img/item2.svg", row: 1, column: 2, count: 2 },
-        { id: 3, svg: "img/item3.svg", row: 1, column: 3, count: 5 },
-    ]*/
     mutations:{
         RETURNMODALWINDOW:(state, payload)=>{
             state.modalWindowData = payload;
